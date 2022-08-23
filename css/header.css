@@ -1,0 +1,112 @@
+.menu {
+  background-color: #131313;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* menuScroll e scrollnav são as classes adicionadas via JS para mudar o menu ao scrollar a tela */
+
+.menuScroll {
+  background-color: rgba(19, 19, 19, 0.9);
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+.header > img {
+  width: 15vh;
+}
+*/
+
+.scrollnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scrollnav {
+  transition: padding 400ms;
+}
+
+.header {
+  transition: padding 400ms;
+}
+
+.menuScroll {
+  transition: background-color 600ms;
+}
+
+.menu {
+  transition: background-color 600ms;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul,
+.header-menu a {
+  text-decoration: none;
+  color: #ececec;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header-menu a {
+  transition: color 400ms;
+}
+
+.header-menu a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .header-menu {
+    padding: 5px;
+  }
+}

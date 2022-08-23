@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap");
+
+.primeiro-artigo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.kombi {
+  max-width: 530px;
+  padding-left: 40px;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-left: 50px;
+  position: relative;
+  z-index: -1;
+}
+
+.bloco-1 li::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../Img/Marcador.svg");
+  position: absolute;
+  left: 20px;
+}
+
+.bloco-2 {
+  position: relative;
+}
+
+.bloco-2 li::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../Img/Marcador.svg");
+  position: absolute;
+  left: -25px;
+}
+
+/* Para quem é este curso */
+
+.para-quem {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.legendas-carrossel {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.carrossel img {
+  position: relative;
+  z-index: -1;
+}
+
+.carrossel > div {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+  transition: linear-gradient 0.4s;
+}
+
+/*
+.carrossel > div {
+  transition: linear-gradient 0.4s;
+}
+
+.carrossel > div:hover {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, #000 60%);
+}
+
+*/

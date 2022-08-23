@@ -1,0 +1,102 @@
+.fundo {
+  background-color: #e5ebff;
+}
+
+.detalhe-acordeon {
+  display: flex;
+  align-items: flex-end;
+}
+
+.detalhe-acordeon > img {
+  padding-top: 400px;
+}
+
+.acordeon dl > div {
+  padding: 4px 40px;
+  border-top: solid 2px;
+  border-color: #3d8b97;
+}
+
+.acordeon dl > div:last-child {
+  border-bottom: solid 2px;
+  border-color: #3d8b97;
+}
+
+.acordeon dd {
+  padding: 0 10px;
+}
+
+.container-acordeon {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fundo h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 100px;
+  line-height: 80px;
+  color: #b3cee0;
+  margin: 40px 0;
+}
+
+.acordeon button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  cursor: pointer;
+  padding: 10px 0px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.acordeon button::after {
+  content: "";
+  width: 35px;
+  height: 20px;
+  display: inline-block;
+  background: url("../Img/Seta.svg");
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.acordeon {
+  max-width: 957px;
+  margin: 0 auto;
+}
+
+.acordeon button:hover::after {
+  transform: rotate(180deg);
+}
+
+.acordeon .ativo button::after {
+  transform: rotate(180deg);
+}
+
+.js-accordion {
+  margin-bottom: 80px;
+}
+
+.js-accordion dd {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.js-accordion dd.ativo {
+  max-height: 200px;
+  opacity: 1;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0px;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}

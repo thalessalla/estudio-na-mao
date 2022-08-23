@@ -1,0 +1,12 @@
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./artigo.css";
+@import "./acordeon.css";
+@import "./carrossel.css";
+@import "./começar-agora.css";
+@import "../utilidades/cores.css";
+@import "../utilidades/tipografia.css";
+@import "./depoimentos.css";
+@import "./call.css";
+@import "./footer.css";

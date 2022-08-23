@@ -1,0 +1,33 @@
+.font-1-s-s {
+  font: 400 0.8rem/1 "roboto", sans-serif;
+}
+
+.font-1-s {
+  font: 500 1rem/1.5 "roboto", sans-serif;
+}
+
+.font-1-m {
+  font: 400 1.25rem/1.62 "roboto", sans-serif;
+}
+
+.font-1-m-b {
+  font: 600 2rem/2 "roboto", sans-serif;
+}
+
+.font-1-c {
+  font: 500 1.25rem/1.62 "roboto";
+}
+
+.font-1-g {
+  font: 600 1.25rem/1.65 "roboto", sans-serif;
+}
+.font-1-g-b {
+  font: 400 1.25rem/1.25 "roboto", sans-serif;
+}
+.font-2-s {
+  font: 600 20px "poppins", sans-serif;
+}
+
+.font-2-m {
+  font: 600 2.5rem/0.6 "poppins", sans-serif;
+}

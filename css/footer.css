@@ -1,0 +1,55 @@
+.bkg-footer {
+  background-color: #3d3d3d;
+}
+
+.bkg-footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 80px 40px;
+}
+
+.contato-footer {
+  border-right: solid 1px;
+  border-left: solid 1px;
+  border-color: #b8b8b8;
+}
+
+.conatiner-footer {
+  padding: 20px 40px;
+}
+
+.redes-sociais img {
+  padding: 20px 5px;
+}
+
+.desenvolvimento p {
+  font-size: 14px;
+}
+
+.desenvolvimento {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.informacoes-footer a {
+  display: block;
+}
+
+.conatiner-footer a {
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.conatiner-footer a:hover {
+  color: #e5ebff;
+}
+
+.redes-sociais a:hover {
+  color: #e5ebff;
+}
