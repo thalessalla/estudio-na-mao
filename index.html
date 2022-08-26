@@ -10,11 +10,12 @@
 
 <body>
 
-  <div class="container-video">
+  <!--container-video-->
+  <div>
 
     <header class="menu">
       <div class="header">
-        <a href="#topo"> <img src="./Img/Logo-estudio-na-mao.svg" </a>
+        <a id="logo-estudio" href="#topo"> <img src="./Img/Logo-estudio-na-mao.svg" </a>
           <nav class="js-link">
             <ul class="header-menu">
               <li> <a class="hover-underline-animation" href="#sobre"> Sobre </a></li>
@@ -23,12 +24,13 @@
               <li> <a class="inscricao-menu" href="https://pay.hotmart.com/S24312934N?checkoutMode=0&bid=1629472411890z"> INSCREVA-SE AGORA </a></li>
             </ul>
           </nav>
+          <a class="inscricao-menu-mobile" href="https://pay.hotmart.com/S24312934N?checkoutMode=0&bid=1629472411890z"> INSCREVA-SE AGORA </a>
       </div>
     </header>
     <main>
       <div id="topo" class="inicio">
         <div class="home">
-          <div>
+          <div id="frase-inicial">
             <h1 class="nao-limite"> Não limite </h1>
 
 
@@ -41,23 +43,22 @@
             <h1>local sua</h1>
             <div class="arte">
               <h1>arte</h1>
+              <div class="bloco">
+                <img class="retangulo-azul" src="./Img/Rectangle.svg" alt="retangulo">
 
-              <Span class="bloco"><svg width="127" height="44">
-                  <rect width="300" height="100" style="fill:#62C9D9;" />
-                </svg>
-              </Span>
-
+              </div>
             </div>
-            <a class="botao-secundario video-saiba-mais" src="Img/Video de vendas.mp4"> SAIBA MAIS </a>
+            <div id="botao-saiba-inicio"> <a class="botao-secundario video-saiba-mais" src="Img/Video de vendas.mp4"> SAIBA MAIS </a></div>
+
           </div>
-          <div>
+          <div id="ilustracao-home">
             <img src="./Img/Arte.svg" alt="sua arte em qualquer lugar">
           </div>
         </div>
       </div>
     </main>
 
-    <article id="sobre" class="js-scroll">
+    <article id="sobre" class="js-fade-up">
       <div class="primeiro-artigo">
 
         <div>
@@ -108,13 +109,14 @@
       </div>
     </article>
 
-    <section class="bg-carrossel js-scroll">
+    <section class="bg-carrossel js-fade-up">
       <div class="container-carrossel">
         <div class="serve-para-mim">
 
-          <h3 class="font-2-s cor-8">Será que serve para mim?</h3>
+          <h3 class="font-2-s cor-8 js-fade-right">Será que serve para mim?</h3>
           <h2 class="font-2-m cor-1">Para quem é este curso</h2>
-          <img class="divisor" src="./Img/Separador brando.png">
+          <img id="divisor-branco" class="divisor" src="./Img/Separador brando.png">
+          <img id="divisor-azul" class="divisor" src="./Img/Divisor.svg">
         </div>
 
         <div class="carrossel">
@@ -135,7 +137,7 @@
           <div>
             <img src="./Img/videomakers.jpg" alt="Videomakers que queiram melhorar a qualidade do seu trabalho através do áudio.">
             <div class="legendas-carrossel">
-              <p class="font-1-s cor-2">Videomakers que queiram melhorar a qualidade do seu trabalho através do áudio.</p>
+              <p class="font-1-s cor-2">Videomakers que queiram melhorar a qualidade do seu trabalho.</p>
             </div>
           </div>
 
@@ -157,7 +159,7 @@
       </div>
     </section>
 
-    <section class="porque-começar-agora js-scroll">
+    <section class="porque-começar-agora js-fade-up">
 
       <h3 class="cor-9 font-2-s">Será que serve para mim?</h3>
       <h2 class="cor-4 font-2-m">Porque começar agora?</h2>
@@ -204,10 +206,10 @@
     </section>
 
 
-    <section id="modulos" class="fundo js-scroll">
+    <section id="modulos" class="fundo js-fade-up">
       <div class="container-acordeon">
         <img src="./Img/elemento-modulos-top.svg" alt="">
-        <h2>Módulos <br>do curso</h2>
+        <h2 class="js-fade-right">Módulos <br>do curso</h2>
 
         <div class="acordeon">
           <dl class="js-accordion">
@@ -247,9 +249,9 @@
     </section>
 
 
-    <Section id="depoimentos" class="bkg-depoimento js-scroll">
+    <Section id="depoimentos" class="bkg-depoimento js-fade-up">
       <div class="depoimentos">
-        <h2>Depoimento <br> dos alunos</h2>
+        <h2 class="js-fade-right">Depoimento <br> dos alunos</h2>
         <div class="video-depoimentos">
           <iframe width="955" height="537" src="https://www.youtube.com/embed/2QpyUIf3SXU" title="Depoimentos alunos do curso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -257,14 +259,14 @@
     </Section>
 
 
-    <div class="container-call js-scroll">
-      <div>
+    <div class="container-call js-fade-up">
+      <div id="bora-gravar">
         <h4 class="font-1-m-b cor-5">Bora sair gravando por ai?</h4>
-        <p class="font-1-m-2 cor-6">Clique no botão abaixo e dê o primeiro passo <br> para você se tornar um produtor musical. </p>
+        <p class="font-1-m-2 cor-6">Clique no botão abaixo e dê o primeiro passo para você se tornar um produtor musical. </p>
         <a class="inscricao-botao" href="https://pay.hotmart.com/S24312934N?checkoutMode=0&bid=1629472411890">INSCREVA-SE AGORA</a>
       </div>
 
-      <div>
+      <div id="bora-gravar">
         <div>
           <img src="./Img/arte-call.svg" alt="">
         </div>
@@ -276,7 +278,7 @@
     <footer>
       <div class="bkg-footer">
         <div id="grid-footer">
-          <div class="conatiner-footer">
+          <div class="logo-cx-1 conatiner-footer">
             <img src="./Img/Logo.svg" alt="">
           </div>
 
@@ -305,7 +307,9 @@
       </div>
     </footer>
 
-    //popup video de vendas
+
+
+    <!--popup video de vendas-->
 
     <div class="popup-video">
       <button onclick="pauseVid()">&times;</button>

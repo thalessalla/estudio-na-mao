@@ -89,7 +89,7 @@ scroll();
 // Animar ao scroll
 
 function scrollAnimado() {
-  const sections = document.querySelectorAll(".js-scroll");
+  const sections = document.querySelectorAll(".js-fade-up");
   const windowMetade = window.innerHeight * 0.6;
   function animaScroll() {
     sections.forEach((section) => {
@@ -104,20 +104,40 @@ function scrollAnimado() {
   window.addEventListener("scroll", animaScroll);
 }
 
+// Scroll lateral
+
+const sections = document.querySelectorAll(".js-fade-right");
+const windowMetade = window.innerHeight * 0.6;
+function animaScroll() {
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const isSectionVisible = sectionTop - windowMetade < 0;
+    if (isSectionVisible) {
+      section.classList.add("ativo-scroll-right");
+    }
+  });
+}
+
+window.addEventListener("scroll", animaScroll);
+
 scrollAnimado();
 
 //popup video
 
-const videoSaibaMais = document.querySelector(".popup-video video");
+function popupVideo() {
+  const videoSaibaMais = document.querySelector(".popup-video video");
 
-document.querySelectorAll(".video-saiba-mais").forEach((vid) => {
-  vid.onclick = () => {
-    document.querySelector(".popup-video").style.display = "block";
-    // document.querySelector(".popup-video video-saiba-mais").src =
-    //vid.getAttribute("src");
+  document.querySelectorAll(".video-saiba-mais").forEach((vid) => {
+    vid.onclick = () => {
+      document.querySelector(".popup-video").style.display = "block";
+      // document.querySelector(".popup-video video-saiba-mais").src =
+      //vid.getAttribute("src");
+    };
+  });
+  document.querySelector(".popup-video button").onclick = () => {
+    document.querySelector(".popup-video").style.display = "none";
+    videoSaibaMais.pause();
   };
-});
-document.querySelector(".popup-video button").onclick = () => {
-  document.querySelector(".popup-video").style.display = "none";
-  videoSaibaMais.pause();
-};
+}
+
+popupVideo();

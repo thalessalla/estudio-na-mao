@@ -10,10 +10,48 @@
   padding-bottom: 40px;
 }
 
+/*
 .container-call h4 {
   margin-bottom: -0px;
 }
+*/
 
 .container-call img {
   padding: 80px 0px;
+}
+
+/* Responsivo */
+
+@media (max-width: 1200px) {
+  .container-call {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container-call {
+    display: block;
+  }
+  #bora-gravar h4 {
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+    padding-top: 10px;
+  }
+
+  #bora-gravar a {
+    display: flex;
+    justify-content: center;
+  }
+
+  #bora-gravar p {
+    display: flex;
+    justify-content: center;
+
+    font-size: 18px;
+  }
+
+  #bora-gravar img {
+    display: none;
+  }
 }

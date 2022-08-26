@@ -11,7 +11,7 @@
 }
 
 .font-1-m-b {
-  font: 600 2rem/2 "roboto", sans-serif;
+  font: 600 2rem/1.6 "roboto", sans-serif;
 }
 
 .font-1-c {
@@ -25,9 +25,9 @@
   font: 400 1.25rem/1.25 "roboto", sans-serif;
 }
 .font-2-s {
-  font: 600 20px "poppins", sans-serif;
+  font: 600 1.25rem/1.2 "poppins", sans-serif;
 }
 
 .font-2-m {
-  font: 600 2.5rem/0.6 "poppins", sans-serif;
+  font: 600 2.5rem/1.1 "poppins", sans-serif;
 }

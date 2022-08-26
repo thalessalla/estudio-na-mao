@@ -8,11 +8,9 @@
   justify-content: center;
 }
 
-/*
 .divisor-central {
   justify-content: center;
 }
-*/
 
 .blocos {
   display: flex;
@@ -31,4 +29,28 @@
 
 .blocos div p {
   padding: 0 15px 0 15px;
+}
+
+/* Responsivo */
+
+@media (max-width: 1220px) {
+  .blocos {
+    display: flex;
+    justify-content: center;
+  }
+  .porque-começar-agora {
+    padding-top: 10px;
+  }
+  h3 {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .porque-começar-agora {
+    padding: 10px;
+  }
+  .divisor-central {
+    padding-bottom: 10px;
+  }
 }

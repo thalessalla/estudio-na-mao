@@ -9,11 +9,6 @@
   padding-bottom: 80px;
 }
 
-.kombi {
-  max-width: 530px;
-  padding-left: 40px;
-}
-
 .lista {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,40 +42,47 @@
   left: -25px;
 }
 
-/* Para quem é este curso */
-
-.para-quem {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 80px;
+.kombi {
+  justify-content: flex-end;
+  max-width: 80%;
+  padding-left: 20%;
 }
 
-.legendas-carrossel {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  .primeiro-artigo {
+    margin: 30px;
+  }
+  .kombi {
+    max-width: 85%;
+  }
+  .primeiro-artigo {
+    padding-bottom: 40px;
+  }
 }
 
-.carrossel img {
-  position: relative;
-  z-index: -1;
+@media (max-width: 900px) {
+  .kombi {
+    display: none;
+  }
+  .primeiro-artigo {
+    padding-bottom: 20px;
+  }
+
+  .primeiro-artigo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
 }
 
-.carrossel > div {
-  position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
-  transition: linear-gradient 0.4s;
+@media (max-width: 450px) {
+  .lista {
+    display: block;
+    padding-top: 40px;
+  }
+  .lista-1 {
+    padding-top: 20px;
+  }
 }
-
-/*
-.carrossel > div {
-  transition: linear-gradient 0.4s;
-}
-
-.carrossel > div:hover {
-  position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, #000 60%);
-}
-
-*/

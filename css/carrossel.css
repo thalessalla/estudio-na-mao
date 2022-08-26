@@ -8,13 +8,6 @@
   box-shadow: inset -505px -136px #f5f5f5;
 }
 
-/*
-.serve-para-mim > h3 {
-  padding-top: 80px;
-  padding-bottom: 10px;
-}
-*/
-
 .serve-para-mim {
   padding-top: 0px;
 }
@@ -24,23 +17,102 @@
   margin: 0 auto;
 }
 
-/*
-.serve-para-mim h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 45px;
-  color: #f5f5f5;
+.carrossel {
+  position: relative;
 }
 
-.serve-para-mim h3 {
-  padding-top: 80px;
-  padding-bottom: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffe792;
+.legendas-carrossel p {
+  margin: 10px;
 }
-*/
+
+.legendas-carrossel p::before {
+  content: "";
+  background: #176673;
+  width: 2px;
+  height: 70px;
+  display: inline-block;
+  position: absolute;
+  left: -0.5px;
+}
+
+.legendas-carrossel {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.carrossel img {
+  position: relative;
+  z-index: -1;
+}
+
+.carrossel > div {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, #000 80%);
+}
+
+.carrossel > div {
+  transition: 0.8s;
+}
+
+.carrossel > div:hover {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, #000 60%); */
+}
+
+#divisor-azul {
+  display: none;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  .container-carrossel {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .bg-carrossel {
+    background-color: #176673;
+    box-shadow: inset -350px -136px #f5f5f5;
+  }
+}
+
+@media (max-width: 870px) {
+  .bg-carrossel {
+    background-color: #176673;
+    box-shadow: inset -120px -136px #f5f5f5;
+  }
+}
+
+@media (max-width: 850px) {
+  .carrossel {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bg-carrossel {
+    background-color: #f5f5f5;
+    box-shadow: none;
+  }
+  .cor-8 {
+    color: #b4520a;
+  }
+  .cor-1 {
+    color: #227b89;
+  }
+  #divisor-azul {
+    display: block;
+  }
+  #divisor-branco {
+    display: none;
+  }
+  h3 {
+    padding-top: 10px;
+  }
+}

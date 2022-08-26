@@ -38,6 +38,7 @@
   line-height: 80px;
   color: #b3cee0;
   margin: 40px 0;
+  word-wrap: break-word;
 }
 
 .acordeon button {
@@ -98,5 +99,27 @@
   to {
     opacity: 1;
     max-height: 200px;
+  }
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  .container-acordeon {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container-acordeon img {
+    display: none;
+  }
+  .container-acordeon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container-acordeon h2 {
+    font-size: 80px;
+    line-height: 70px;
   }
 }

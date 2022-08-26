@@ -39,11 +39,13 @@ h3 {
 .divisor {
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .divisor-central {
   justify-content: center;
   padding-bottom: 80px;
+  width: 100%;
 }
 
 /*botão secundario de saiba mais*/
@@ -80,9 +82,33 @@ h3 {
   color: #e5ebff;
   font-size: 1rem;
   border: none;
+  font-weight: 500;
 }
 
 .inscricao-menu:hover {
+  background: #f6832d;
+  color: #525252;
+  transition: background-color 400ms;
+}
+
+/* Botão parte final inscrição MENU* MOBILE*/
+
+.inscricao-menu-mobile {
+  background: #308390;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 24px;
+  color: #e5ebff;
+  font-size: 1rem;
+  border: none;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.inscricao-menu-mobile:hover {
   background: #f6832d;
   color: #525252;
   transition: background-color 400ms;
@@ -94,7 +120,7 @@ h3 {
   align-items: center;
   padding: 16px 32px;
   gap: 24px;
-  color: #e5ebff;
+  color: #ffffff;
   font-size: 1rem;
   background: #308390;
   border: none;
@@ -145,13 +171,26 @@ h3 {
 
 /* animação ao scroll*/
 
-.js-scroll {
+.js-fade-up {
   opacity: 0;
-  transform: translate3d(0, 30px, 0);
-  transition: 0.3s;
+  transform: translate3d(0, 90px, 0);
+  transition: 0.5s;
 }
 
 .ativo-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Fade direita */
+
+.js-fade-right {
+  opacity: 0;
+  transform: translate3d(90px, 0, 0);
+  transition: 0.5s;
+}
+
+.ativo-scroll-right {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }

@@ -110,3 +110,43 @@ ul,
     padding: 5px;
   }
 }
+
+@media (min-width: 710px) {
+  .inscricao-menu-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 710px) {
+  .hover-underline-animation,
+  .inscricao-menu {
+    display: none;
+  }
+
+  .js-link {
+    display: none;
+  }
+  .header {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  .header-menu {
+    display: block;
+  }
+
+  .header-menu a {
+    padding: 0;
+  }
+
+  .header-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-estudio {
+    width: 110px;
+    display: flex;
+    align-items: center;
+  }
+}
